@@ -122,3 +122,28 @@ $("#accesscookies3").click(() => {
     });
     }
   });
+
+  $("#glutenfreeinfo").click(() => {
+    var pElement = $(".glutenfree");
+    if (pElement.children().length > 0){ 
+        pElement.empty(); 
+    } else {
+        $.ajax({
+        url: "http://localhost:8000/api/cookies",
+         method: 'GET',
+        success: function(data) { 
+        data.forEach(function(index) { 
+          var glutenInfo = true;  
+          if (index.gluten_free === glutenInfo) { 
+            var cookiesName = index.name;
+            console.log(cookiesName)
+            pElement.append(`<p> ${cookiesName} </p>`);
+          }
+        });
+      },
+      error: function(error) {
+        console.log(error);
+      }
+    });
+    }
+  });

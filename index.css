@@ -1,39 +1,8 @@
-/* #accesscookies {
-    background-color: #0de1ec;
-    border: none;
-    color: rgb(228, 79, 53);
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 25px;
-    margin: 4px 2px;
-    z-index: 1;
-    font-weight: 600;
-    border-radius: 50%;
-    position: fixed;
-  }
-
-#accesscookies2 {
-    background-color:#0de1ec;
-    border: none;
-    color: rgb(228, 79, 53);
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 25px;
-    margin: 4px 2px;
-    z-index: 1;
-    font-weight: 600;
-    border-radius: 50%;
-    
-  }  */
-
 .button-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    z-index: 1;
 }
   
 button {
@@ -46,6 +15,7 @@ button {
     font-size: 25px;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
+    z-index: 1;
 }
 
 button:hover {
@@ -63,6 +33,7 @@ h1 {
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
+    z-index: 1;
 }
 
 p {
@@ -75,13 +46,16 @@ p {
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
+    z-index: 1;
 }  
 
-img {
-    width: 100vw; /* set the width  to 100% of the viewport width */
-    height: 100vh; /* set the height to 100% of the viewport height */
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+body {
+    background-image: url('C:/Users/fortg/Desktop/CSP Projects/CookieStore/cookingcookies.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
