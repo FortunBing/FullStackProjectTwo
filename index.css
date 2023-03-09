@@ -1,0 +1,87 @@
+/* #accesscookies {
+    background-color: #0de1ec;
+    border: none;
+    color: rgb(228, 79, 53);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    z-index: 1;
+    font-weight: 600;
+    border-radius: 50%;
+    position: fixed;
+  }
+
+#accesscookies2 {
+    background-color:#0de1ec;
+    border: none;
+    color: rgb(228, 79, 53);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    z-index: 1;
+    font-weight: 600;
+    border-radius: 50%;
+    
+  }  */
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+button {
+    padding: 10px 20px;
+    width: 500px;
+    background-color: #043874;
+    color: aliceblue;
+    border: none;
+    border-radius: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: transparent;
+}
+
+h1 {
+
+    font-size: 100px;
+    color: aliceblue;
+    font-family: fantasy;
+    text-align: center;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+p {
+    font-size: 30px;
+     color: aliceblue;
+    font-family: fantasy;
+    text-align: center;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}  
+
+img {
+    width: 100vw; /* set the width  to 100% of the viewport width */
+    height: 100vh; /* set the height to 100% of the viewport height */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
